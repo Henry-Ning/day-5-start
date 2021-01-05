@@ -1,19 +1,18 @@
 # 🚨 Don't change the code below 👇
-student_heights = input("Input a list of student heights ").split()
-for n in range(0, len(student_heights)):
-  student_heights[n] = int(student_heights[n])
+student_scores = input("Input a list of student scores ").split()
+for n in range(0, len(student_scores)):
+  student_scores[n] = int(student_scores[n])
+print(student_scores)
 # 🚨 Don't change the code above 👆
-
 
 #Write your code below this row 👇
 
-number = 0
-height_sum = 0
+max_score = 0
 
-for height in student_heights:
-  height_sum = height_sum + student_heights[number]
-  number = number + 1
+for score in student_scores:
+  if score > max_score:
+    max_score = score
 
-print(height_sum/number)
+print(max_score)
 
 
